@@ -1,0 +1,81 @@
+:root{
+    --one:rgb(162, 127, 62);
+    --two:rgb(149, 107, 29);
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--one);
+    color: rgb(249, 249, 249);
+    font-family:sans-serif;
+}
+img{
+    height: 200px;
+    width: auto;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--two);
+    border-radius: 8px;
+    width: 60%;
+    height: 69%;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.chick{
+    position: absolute;
+    height: 150px;
+    width: auto;
+    bottom: -5%;
+    right: 10%;
+}
+.farp{
+    position: absolute;
+    height: 150px;
+    width: auto;
+    top: 5%;
+    left: 5%;
+    transform: rotatez(29deg);
+
+}
+.farp:hover{
+    scale: 2;
+}
+a{
+    font-size: 16px;
+    color: rgb(255, 223, 44);
+    
+   padding: 8px;
+    margin: 8px;
+    word-wrap:normal;
+    text-decoration:wavy;
+    
+}
+a:hover::before{
+    text-decoration: none;
+    flex-direction: row;
+    color:wheat ;
+     text-decoration: none; 
+    content: "🍔";  /* Custom bullet */
+    margin-right: 6px;  
+}
+.container{
+    display: flex;
+    width: 400px;
+    height: 100;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
