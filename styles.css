@@ -16,13 +16,13 @@ body{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+   
     justify-content: start;
     align-items: center;
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+  
 
 }
 a{
@@ -44,14 +44,23 @@ button{
     border-radius: 18px;
     border: none;
 }
+p{
+    padding: 4px;
+    margin: 4px;
+}
 .row{
     display: flex;
     flex-direction: row;
  
 }
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
 /* sections */
 
-nav, .hero {
+nav, .hero ,.quote,.action, .footer{
     width: 100%;
 }
   nav{
@@ -93,16 +102,19 @@ nav, .hero {
 #projects{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
+    padding: 20px;
 }
 .box{
+    color: var(--btn);
     border-radius: 8px;
     border: 4px solid var(--btn);
     width: 150px;
     height: 150px;
     margin: 8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
@@ -111,7 +123,46 @@ nav, .hero {
 .box:hover{
     background-color: var(--dark);
 }
-
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+  
+    height: 30vh;
+    background-color: var(--quote);
+}
+.footer{
+    display: flex;
+    color: white;
+    background-color: var(--dark);
+    align-items: center;
+    justify-content: center;
+}
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 30vh;
+}
+.action-box{
+    width: 80%;
+    height: 50%;
+    background-color: #3882f6;
+    border-radius: 12px;
+    color: var(--text);
+    padding: 12px;
+    justify-content: space-around;
+    align-items: end;
+    
+}
+.action-btn{
+    width: auto;
+    padding: 8px;
+    border: solid 2px white;
+    color: var(--text);
+    margin-left: 42px;
+}
 /* images */
 .bike{
     height: 90px;
@@ -153,5 +204,8 @@ nav, .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .footer{
+        background-color: var(--btn);
     }
 }
